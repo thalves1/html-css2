@@ -1,0 +1,64 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Love';
+    src: url('../fontes/tattoo-studio-tattoo-studio-svg-400.otf') format('opentype');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-size: 100%;
+    background: linear-gradient(to bottom , rgb(80, 78, 78) , rgb(182, 182, 182));
+}
+
+.cabecalho {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 22px;
+}
+
+.cabecalho-imagem {
+    height: 88px;
+}
+
+.cabecalho-menu {
+    display: flex;
+    gap: 150px;
+}
+
+.cabecalho-menu > a {
+    font-size:  25px;
+    color: black;
+}
+
+.conteudo {
+    border-top: 0.2px solid;
+    margin-bottom: 50px;
+}
+
+.conteudo-principal {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 50%;
+}
+
+.conteudo-principal-escrito {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.conteudo-principal-escrito > h1 
+    font-size: 40px;
+
+    @media(max-widht: 100px)
